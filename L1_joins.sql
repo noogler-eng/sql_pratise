@@ -22,3 +22,13 @@ FROM table1
 RIGHT JOIN table2
 ON table1.column = table2.column;
 
+-- What is a CROSS JOIN?
+-- A CROSS JOIN in SQL is a type of join that produces the Cartesian product of two tables. 
+-- It returns all possible combinations of rows between the two tables being joined. Unlike 
+-- other types of joins (like INNER JOIN, LEFT JOIN, etc.), a CROSS JOIN does not require a 
+-- condition for the join (e.g., no ON clause). This means every row from the first table is 
+-- combined with every row from the second table.
+
+SELECT columns
+FROM table1
+CROSS JOIN table2;
